@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer Portfolio - John Doe</title>
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>L E O T R I M . L E Z I</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <h2>Welcome to My Photography Portfolio</h2>
+      <p>Capturing moments, one click at a time.</p>
+    </section>
+
+    
+       <section class="gallery">
+         <!--Photo Gallery Section -->
+        <div class="gallery-section">
+          <h2>Photo Gallery</h2>
+          <div class="gallery-grid">
+              <div class="gallery-item">
+                  <img src="photos/DSC_0269.JPG" alt="Image 1">
+              </div>
+              <div class="gallery-item">
+                  <img src="photos/DSC_0292.JPG" alt="Image 2">
+              </div>
+              <div class="gallery-item">
+                  <img src="photos/DSC_0297.JPG" alt="Image 3">
+              </div>
+              <div class="gallery-item">
+                  <img src="photos/DSC_0305.JPG" alt="Image 4">
+              </div>
+              <div class="gallery-item">
+                <img src="photos/DSC_0309.JPG"Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/DSC_0331.JPG" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/DSC_0342.JPG" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="photos/DSC_0359.JPG" alt="Image 4">
+            </div>
+          </div>
+      </div>
+
+       <!--Video Gallery Section -->
+      <div class="gallery-section">
+          <h2>Video Gallery</h2>
+          <div class="gallery-grid">
+              <div class="gallery-item">
+                  <video width="300" controls>
+                      <source src="photos/video1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+              <div class="gallery-item">
+                  <video width="300" controls>
+                      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+              <div class="gallery-item">
+                  <video width="300" controls>
+                      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+              <div class="gallery-item">
+                  <video width="300" controls>
+                      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+  </section>
+      
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my photography world. I'm passionate about capturing moments
+        and turning them into lasting memories. With years of experience, I
+        specialize in various photography styles, including portraits,
+        landscapes, and events.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Interested in my work? Let's get in touch.</p>
+      <form action="contact_form.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+      <span id="close-lightbox" class="close-btn">&times;</span>
+      <div id="lightbox-content" class="lightbox-content">
+          <img id="lightbox-image" class="lightbox-image" src="" alt="">
+          <video id="lightbox-video" class="lightbox-video" controls>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+
+    <footer>
+      <p>&copy; 2023 Leotrim Lezi Photography</p>
+      <p>leotrimlezi2@gmail.com</p>
+      <p>+38348562740</p>
+     
+    </footer>
+  </body>
+</html>
